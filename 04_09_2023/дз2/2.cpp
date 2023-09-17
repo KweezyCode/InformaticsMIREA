@@ -11,15 +11,18 @@ void print(T var)
 
 int main()
 {
-    int x;
-    int a;
+    float x;
+    float a;
 
     cin >> x;
     cin >> a;
 
     if (abs(x) < 1) {
-        print(a * log10(abs(x)));
+        print(a * log(abs(x)));
     } 
+    else if(a < x*x) {
+        print("Ошибка корня");
+    }
     else {
         print(sqrt(a - x*x));
     }

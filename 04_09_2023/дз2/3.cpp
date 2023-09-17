@@ -19,6 +19,11 @@ int main()
     cin >> y;
     cin >> b;
 
-    print(log10(b - y) * sqrt(b - x));
+    if(b - y <= 0 or b - x < 0) {
+        print("нельзя такие числа");
+    }
+    else {
+        print(log(b - y) * sqrt(b - x));
+    }
     return 0;
 }

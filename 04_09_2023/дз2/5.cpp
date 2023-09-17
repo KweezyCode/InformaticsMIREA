@@ -11,7 +11,7 @@ void print(T var)
 
 int main()
 {
-    int a;
+
     for (float x = -4; x <= 4; x+=0.5) {
         if (x == 1) {
             continue;
