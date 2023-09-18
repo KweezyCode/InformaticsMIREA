@@ -14,7 +14,7 @@ int main()
 
     for (float x = -4; x <= 4; x+=0.5) {
         if (x == 1) {
-            continue;
+            print("x != 1");
         }
         print("-----");
         print(x);

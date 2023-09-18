@@ -11,6 +11,11 @@ void print(T var)
 
 int main()
 {
+
+    // R 7
+    // r 4
+    // h 4
+
     int r1;
     int r2;
     int h;
@@ -27,8 +32,8 @@ int main()
     l = sqrt(r1*r1+h*h);
 
     print("V:");
-    print((1/3) * M_PI * (r1*r1 + r1 * r2 + r2*r2) * h);
-    
+    print((1./3) * M_PI * (r1*r1 + r1 * r2 + r2*r2) * h);
+
     print("S:");
     print(M_PI * (r1 * r1 + l*(r1+r2) + r2*r2));
     
