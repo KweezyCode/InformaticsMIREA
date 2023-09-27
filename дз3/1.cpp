@@ -17,9 +17,14 @@ int main()
     double n;
     double p;
 
+    cin >> S;
+    cin >> p;
+    cin >> n;
+
     r = p / 100;
     if (pow(1+r, n) != 1) {
         m = (S*r*pow(1+r, n)) / (12 * (pow(1+r, n) - 1));
+        print(m);
     }
     else {
         print("Нельзя такие числа");
