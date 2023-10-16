@@ -8,7 +8,7 @@ int main() {
 
     for (int x = 0; x < 20; x++) {
         for (int y = 0; y < 120; y++) {
-            m[x][y] = '  ';
+            m[x][y] = ' ';
         }
     }
 

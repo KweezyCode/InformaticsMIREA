@@ -20,6 +20,10 @@ int main()
     cin >> a; cin >> b; cin >> c;
     cin >> d; cin >> e;
     cin >> r;
+    if (a < 0 || b < 0 || c < 0 || d < 0 || e < 0 || r < 0) {
+        print("Нельзя такие числа");
+        return 0;
+    }
 
     print(треугольник(a,b,c));
     print(прямоугольник(d,e));
@@ -28,6 +32,7 @@ int main()
     return 0;
 
 }
+
 double треугольник(double a, double b, double c) {
     double p;
     p = (a+b+c) / 2;
