@@ -9,7 +9,19 @@ void print(T var)
     cout << var << endl;
 }
 
+double треугольник(double a, double b, double c) {
+    double p;
+    p = (a+b+c) / 2;
+    return sqrt(p * (p - a) * (p - b) * (p - c));
+}
 
+double прямоугольник(double a, double b) {
+    return a*b;
+}
+
+double круг(double r) {
+    return M_PI * pow(r, 2);
+}
 
 int main()
 {
@@ -33,16 +45,3 @@ int main()
 
 }
 
-double треугольник(double a, double b, double c) {
-    double p;
-    p = (a+b+c) / 2;
-    return sqrt(p * (p - a) * (p - b) * (p - c));
-}
-
-double прямоугольник(double a, double b) {
-    return a*b;
-}
-
-double круг(double r) {
-    return M_PI * pow(r, 2);
-}

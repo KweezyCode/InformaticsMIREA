@@ -52,9 +52,10 @@ int main(){
     int m;
     string a;
 
+    cin >> a;
     cin >> n;
     cin >> m;
-    cin >> a;
+    
 
     
     cout << DecimalToCustomBase(HexToDecimal(a, n), m) << endl;

@@ -9,13 +9,6 @@ void print(T var)
     cout << var << endl;
 }
 
-int main()
-{
-    double x;
-    print(func(x));
-    return 0;
-}
-
 int func(double x) {
     if (x > 0) {
         return 1;
@@ -27,4 +20,28 @@ int func(double x) {
         return -1;
     }
 }
+
+char func1(double x) {
+    if (x > 0) {
+        return '+';
+    }
+    else if (x == 0) {
+        return '0';
+    }
+    else {
+        return '-';
+    }
+}
+
+
+
+int main()
+{
+    double x;
+    cin >> x;
+    cout << func1(x);
+    print("");
+    return 0;
+}
+
 

@@ -12,7 +12,7 @@ int main()
     f.seekp(0);
 
     f >> s;
-    cout << s;
+    cout << s << endl;
     
     return 0;
 }

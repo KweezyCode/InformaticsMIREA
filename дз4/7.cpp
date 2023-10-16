@@ -18,5 +18,5 @@ int P(bool mode, int n)
 using namespace std;
 int main()
 {
-    cout << P(1,5);
+    cout << P(0,5);
 }

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int gcd_division(int a, int b) {
+int fun1(int a, int b) { // Делением
     while (b != 0) {
         int temp = a % b;
         a = b;
@@ -10,7 +10,7 @@ int gcd_division(int a, int b) {
     return abs(a);
 }
 
-int gcd_subtraction(int a, int b) {
+int fun2(int a, int b) { // Вычитанием
     while (a != 0 && b != 0) {
         if (a > b)
             a -= b;
@@ -24,7 +24,7 @@ int main() {
     int a, b;
     cout << "Введите два числа: ";
     cin >> a >> b;
-    cout << "НОД (метод деления): " << gcd_division(a, b) << endl;
-    cout << "НОД (метод вычитания): " << gcd_subtraction(a, b) << endl;
+    cout << "НОД (метод деления): " << fun1(a, b) << endl;
+    cout << "НОД (метод вычитания): " << fun2(a, b) << endl;
     return 0;
 }

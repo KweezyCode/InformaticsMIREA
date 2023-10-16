@@ -8,11 +8,11 @@ bool prime(int n) {
 	}
 	return true;
 }
+
+
 int main()
 {
 	int a;
-	setlocale(LC_ALL, "ru");
-	cout << "Введите число до готорого нужно найти простые числа ";
 	cin >> a;
 	if (a>1)
 		for (int i = 2; i <= a; i++)
